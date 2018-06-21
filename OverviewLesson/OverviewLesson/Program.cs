@@ -19,14 +19,11 @@ namespace OverviewLesson
 
       //Console.WriteLine(randomNumber);
 
-
-
-
-      var number1 = 1000000000;
-      var number2 = 1000000000;
+      var number1 = 23;
+      var number2 = 25;
 
       var calculator = new Calculator();
-      var answer = calculator.Multiply(number1, number2);
+      var answer = calculator.Square(number1);
       Console.WriteLine(answer);
 
       Console.ReadLine();
