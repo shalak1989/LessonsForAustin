@@ -8,6 +8,8 @@ namespace AbstractClasses
 {
   class Program
   {
+    //args are an array of values passed in via the command line or a shortcut. Basically anything that runs your program
+    //can pass arguments to it. You can change the programs behavior based on these
     static void Main(string[] args)
     {
       var example = new DerivedClassExample();
