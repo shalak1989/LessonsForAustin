@@ -25,7 +25,7 @@ namespace Variables
       //floats must end in the character f, they are simialr to doubles but have a different decimal precision 
       float c = 120.235f;
       //decimal is also similar to double and float. I would recommend googling the differences
-      decimal decimalNumber = 1230.234234234M;
+      decimal decimalNumber = 1230.234234234m;
 
       /*string (think words), char(think single character). Strings are a bit special too because they function like arrays.
        * a string is effectively an array of char(s) so you can go name[0] and it would give you "N", name[1] would give you "a" etc.
@@ -47,7 +47,7 @@ namespace Variables
       Example[] exampleArray;
 
       /* C# also has a keyword called "var". var infers the variable type based on what is assigned to the right side of it
-       * NOTE: assignment, or the assignment operator rather is = in C#,
+       * NOTE: assignment, or the assignment operator rather is '=' in C#,
       */
 
       /*test will be an int, the compiler can infer this before the program runs. This means that from this point on in the code
@@ -62,7 +62,8 @@ namespace Variables
       and the ability to easily switch around types later if code changes. Basically get very comfortable working with it.
       */
       var varStringArray = new string[10];
-      var varStringList = new List<string>();//This is the same thing as typing List<string> varStringList = new List<string>();
+      var varStringList = new List<string>(); //This is the same thing as typing 
+      List<string> varStringList2 = new List<string>();
       var varChar = 'A'; //This is the same thing as typing char varChar = 'A';
       var varDictionary = new Dictionary<string, string>();
 

@@ -54,7 +54,7 @@ namespace Loops
        * foreach loops are very similar except there are some differences. One key difference is in a foreach loop you are not allowed
        * to modify the contents in a collection/list while in a for loop you can. If you try to modify/add things in a foreach loop
        * you will get an exception which says something like "Collection was modified; enumeration operation may not execute."
-       * This means the intent of foreach loops is to just loop through data and do something with it (like modify it or move it to 
+       * This means the intent of foreach loops is to just loop through data and do something with it (move it to 
        * another list)
        */
 
@@ -102,7 +102,7 @@ namespace Loops
       var y = 0;
       do
       {
-        //shorthand for x = x + 1;
+        //shorthand for y = y + 1;
         y++;
         Console.WriteLine(y * y);
       } while (y <= 10);
@@ -114,7 +114,7 @@ namespace Loops
       var z = 11;
       do
       {
-        //shorthand for x = x + 1;
+        //shorthand for z = z + 1;
         z++;
         Console.WriteLine(z * z);
       } while (z <= 10);

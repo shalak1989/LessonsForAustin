@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FunctionsAndMethods
+namespace FunctionsPart2
 {
   //there are several different function types, we will only be dealing with static and non-static
   //the word function and method is often used interchangeably, don't worry about the semantics.
@@ -13,6 +13,55 @@ namespace FunctionsAndMethods
    * Functions are essentially reusable blocks of code that take in parameters, do work, and may return a value to the caller
    * Functions marked as "void" do not return any value whereas any other function must have a return type
    */
+
+
+  //Even though all functions must exist inside of a class, static functions do not have to based on an instance of an object
+  //NOTE static functions can exist on non-static classes
+  public class StaticFunctions
+  {
+    public static void Hello()
+    {
+      Console.WriteLine("Hello");
+    }
+
+    public static int Sum(int x, int y)
+    {
+      return x + y;
+    }
+
+    public static void AttemptToModifyIntegerVariable(int x)
+    {
+      x = 100;
+    }
+
+
+    public static void ModifyStringListVariable(List<string> x)
+    {
+      x.Add("Bob");
+    }
+
+    public static void BreakingStringListReference(List<string> x)
+    {
+      x = new List<string>();
+      x.Add("Stan");
+    }
+  }
+
+  //functions inside of classes not marked as static can only be accessed on an instance of the class
+  public class NonStaticFunctions
+  {
+    public void Hello()
+    {
+      Console.WriteLine("Hello");
+    }
+
+    public int Sum(int x, int y)
+    {
+      return x + y;
+    }
+
+  }
+
   class Program
   {
     static void Main(string[] args)
@@ -101,50 +150,5 @@ namespace FunctionsAndMethods
     }
   }
 
-  //Even though all functions must exist inside of a class, static functions do not have to based on an instance of an object
-  //NOTE static functions can exist on non-static classes
-  public class StaticFunctions
-  {
-    public static void Hello()
-    {
-      Console.WriteLine("Hello");
-    }
 
-    public static int Sum(int x, int y)
-    {
-      return x + y;
-    }
-
-    public static void AttemptToModifyIntegerVariable(int x)
-    {
-      x = 100;
-    }
-
-
-    public static void ModifyStringListVariable(List<string> x)
-    {
-      x.Add("Bob");
-    }
-
-    public static void BreakingStringListReference(List<string> x)
-    {
-      x = new List<string>();
-      x.Add("Stan");
-    }
-  }
-
-  //functions inside of classes not marked as static can only be accessed on an instance of the class
-  public class NonStaticFunctions
-  {
-    public void Hello()
-    {
-      Console.WriteLine("Hello");
-    }
-
-    public int Sum(int x, int y)
-    {
-      return x + y;
-    }
-
-  }
 }
