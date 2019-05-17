@@ -10,7 +10,8 @@ namespace FunctionsPart1
   {
     /*functions are one of the most important things you will learn about in programming.
      * effectively you can encapsulate any block of code into a function for reuse later
-     * functions can also be used to make code make more sense. Instead of having 150 lines of code in a row, you can break it into smaller functions
+     * functions can also be used to make code make more sense. Instead of having 150 lines of code in a row, you can break 
+     * it into smaller functions
      * so it is easier to read and understand your programs workflow.
      */
     static void Main(string[] args)
